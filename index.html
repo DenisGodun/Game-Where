@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Where?</title>
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="wrap flex flex-align-items-start flex-justify-content-center">
+    <div id="display" class="display relative">
+       
+       <!--
+      <div class="block height-100-p absolute flex flex-direction-column flex-align-items-center flex-justify-content-center">
+        <div class="">Вы виграли!</div>  
+        <div class="">Найдено: 2/8</div>  
+        <div class=""><a href="javascript:void(0)" >Вернутся в меню</a></div>
+      </div> -->
+      <!-- SCENE MENU -->
+      <div id="sceneMenu" class="scene-menu height-100-p ">
+        <div class="name-game width-100-p absolute flex flex-align-items-start flex-justify-content-center">
+          <div class="">Where?</div>
+        </div>
+        <div class="menu-list height-100-p flex flex-align-items-center flex-justify-content-center">
+          <div class=""><a href="javascript:void(0)" id="start_game" onClick="startGame();">Начать игру</a></div>
+        </div>
+      </div>  
+      
+      <!-- SCENE GAME -->
+      <div id="sceneGame" class="scene-game none">
+        <div class="flex flex-direction-row flex-justify-content-space-between">
+          <div class="padding-10"><a href="javascript:void(0)" onClick="stopGame();">Закончить игру</a></div>
+          <div class="padding-10">Найдено <span id="coinsNow">-</span>/<span id="total_cards">-</span></div>  
+        </div>
+        <!--
+        <div id="card_list" class="flex flex-direction-row flex-align-items-start flex-justify-content-space-around flex-wrap">
+          <!--<div class="card margin-0-10-10-10">1</div>    
+        </div>
+        -->
+      
+      </div>
+      
+    </div>  
+  </div>  
+<script src="js/main.js"></script>
+</body>
+</html>
