@@ -1,5 +1,4 @@
 
-//document.getElementById('start_game').addEventListener('click', startGame(), false);
 var total_cards = 8,
       generate_cards = total_cards+1,
       coins = 0,
@@ -253,32 +252,3 @@ function shuffle(array) {
   return array;
 }
 
-/*
-function startGame() {
-  alert('start');
-  document.getElementById('sceneMenu').style.display = "none";
-  document.getElementById('sceneGame').style.display = "block";
-  
-  document.getElementById('coinsNow').innerHTML = '0';
-  
-  for(var i=1; i<17;i++) {//create 16 cards
-    var card = document.createElement('div');
-    card.className = "card margin-0-10-10-10";
-    card.innerHTML = i;
-    card.id = i;
-    
-    card_list.appendChild(card);
-  }
-}
-*/
-
-//id = card-list
-/*
-for(var i=0; i<10; i++) {
-var div = document.createElement('div');
-div.className = "alert";
-div.innerHTML = "Hello";
-
-bloks.appendChild(div);
-}
-*/
